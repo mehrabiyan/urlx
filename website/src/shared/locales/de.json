@@ -28,7 +28,8 @@
     "dropHint": "Oder klicken, um eine Datei auszuwählen.",
     "dropRelease": "Loslassen, um die Datei hinzuzufügen",
     "fileReady": "bereit zum Verschlüsseln",
-    "buttonRemove": "Entfernen"
+    "buttonRemove": "Entfernen",
+    "chooseFile": "Datei zum Verschlüsseln auswählen"
   },
   "display": {
     "titleDecrypting": "Entschlüsseln...",
@@ -87,7 +88,8 @@
     "receiptListHint": "Sie finden sie später auch auf der Seite „Bestätigungen\".",
     "badgeStored": "Gespeichert · Lebensdauer: {{expiration}}",
     "rowLabelPassword": "Dein Passwort",
-    "autoCopied": "Link kopiert"
+    "autoCopied": "Link kopiert",
+    "share": "Link teilen"
   },
   "secret": {
     "titleFile": "Hier ist deine Datei",
@@ -305,5 +307,22 @@
     "step3Title": "Einmal öffnen",
     "step3Text": "Danach wird es gelöscht. Ungeöffnete Geheimnisse laufen planmäßig ab.",
     "footer": "Entwickelt, um deine Nachrichten Ende-zu-Ende zu schützen und zu verschlüsseln."
+  },
+  "generator": {
+    "title": "Passwortgenerator",
+    "hint": "Wird in deinem Browser erzeugt. Nichts wird gesendet.",
+    "regenerate": "Neues erzeugen",
+    "length": "Länge",
+    "shorter": "Kürzer",
+    "longer": "Länger",
+    "characters": "Zeichen",
+    "upper": "Großbuchstaben",
+    "lower": "Kleinbuchstaben",
+    "digits": "Ziffern",
+    "symbols": "Sonderzeichen",
+    "weak": "Schwach",
+    "good": "Gut",
+    "strong": "Stark",
+    "veryStrong": "Sehr stark"
   }
 }

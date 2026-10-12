@@ -28,7 +28,8 @@
     "dropHint": "Of klik om te bladeren.",
     "dropRelease": "Laat los om het bestand toe te voegen",
     "fileReady": "klaar om te versleutelen",
-    "buttonRemove": "Verwijderen"
+    "buttonRemove": "Verwijderen",
+    "chooseFile": "Kies een bestand om te versleutelen"
   },
   "display": {
     "titleDecrypting": "Ontsleutelen...",
@@ -87,7 +88,8 @@
     "receiptListHint": "Je vindt deze later ook op de pagina Bevestigingen.",
     "badgeStored": "Opgeslagen · looptijd: {{expiration}}",
     "rowLabelPassword": "Je wachtwoord",
-    "autoCopied": "Link gekopieerd"
+    "autoCopied": "Link gekopieerd",
+    "share": "Link delen"
   },
   "secret": {
     "titleFile": "Hier is je bestand",
@@ -305,5 +307,22 @@
     "step3Title": "Eén keer te openen",
     "step3Text": "Daarna wordt het verwijderd. Ongeopende geheimen verlopen volgens schema.",
     "footer": "Gemaakt om je berichten end-to-end te beveiligen en te versleutelen."
+  },
+  "generator": {
+    "title": "Wachtwoordgenerator",
+    "hint": "Gemaakt in je browser. Er wordt niets verstuurd.",
+    "regenerate": "Genereer een ander",
+    "length": "Lengte",
+    "shorter": "Korter",
+    "longer": "Langer",
+    "characters": "Tekens",
+    "upper": "Hoofdletters",
+    "lower": "Kleine letters",
+    "digits": "Cijfers",
+    "symbols": "Symbolen",
+    "weak": "Zwak",
+    "good": "Redelijk",
+    "strong": "Sterk",
+    "veryStrong": "Zeer sterk"
   }
 }

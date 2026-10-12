@@ -13,10 +13,16 @@ import { useConfig } from '@shared/hooks/useConfig';
 import { useSecretForm } from '@shared/hooks/useSecretForm';
 import { SecretOptions } from '@shared/components/SecretOptions';
 import ComposeHeader from '@shared/components/ComposeHeader';
+import PasswordGenerator from '@features/PasswordGenerator';
 import { ArrowRightIcon } from '@shared/components/icons';
-import { primaryButtonClass } from '@shared/components/ui';
+import { ActionBar, primaryButtonClass } from '@shared/components/ui';
 import { shake } from '@shared/lib/motion';
 import Result from '@features/display-secret/Result';
+
+// The send shortcut as the keyboard prints it.
+const shortcutLabel = /Mac|iPhone|iPad/.test(navigator.platform)
+  ? '⌘ Enter'
+  : 'Ctrl Enter';
 
 export default function CreateSecret() {
   const { t } = useTranslation();
@@ -56,6 +62,7 @@ export default function CreateSecret() {
     setError,
     setValue,
     control,
+    setFocus,
     formState: { errors, isSubmitting },
   } = useForm<Secret>({
     defaultValues: {
@@ -69,6 +76,13 @@ export default function CreateSecret() {
   useEffect(() => {
     if (errorMessage) shake(fieldRef.current);
   }, [errorMessage]);
+
+  // With a mouse and keyboard, start in the box so a secret can be pasted
+  // and sent (Ctrl/⌘+Enter) straight away. Touch screens skip this so the
+  // keyboard doesn't cover the page on arrival.
+  useEffect(() => {
+    if (window.matchMedia?.('(pointer: fine)').matches) setFocus('secret');
+  }, [setFocus]);
 
   async function onSubmit(form: Secret) {
     if (!validExpiration(form.expiration, config)) {
@@ -212,7 +226,7 @@ export default function CreateSecret() {
           </div>
         )}
 
-        <div className="flex">
+        <ActionBar>
           <button
             className={primaryButtonClass}
             type="submit"
@@ -222,8 +236,15 @@ export default function CreateSecret() {
             {t('create.buttonEncrypt')}
             <ArrowRightIcon className="size-4 text-(--lv-arrow)" />
           </button>
-        </div>
+          <kbd
+            aria-hidden="true"
+            className="hidden font-mono text-xs text-base-content/50 pointer-fine:inline"
+          >
+            {shortcutLabel}
+          </kbd>
+        </ActionBar>
       </form>
+      <PasswordGenerator />
     </>
   );
 }

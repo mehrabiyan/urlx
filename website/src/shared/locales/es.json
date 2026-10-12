@@ -28,7 +28,8 @@
     "dropHint": "O haga clic para seleccionarlo.",
     "dropRelease": "Suelte para añadir el archivo",
     "fileReady": "listo para cifrar",
-    "buttonRemove": "Quitar"
+    "buttonRemove": "Quitar",
+    "chooseFile": "Elija un archivo para cifrar"
   },
   "display": {
     "titleDecrypting": "Descifrando...",
@@ -87,7 +88,8 @@
     "receiptListHint": "También puedes encontrarlo más tarde en la página de Acuses.",
     "badgeStored": "Guardado · duración: {{expiration}}",
     "rowLabelPassword": "Su contraseña",
-    "autoCopied": "Enlace copiado"
+    "autoCopied": "Enlace copiado",
+    "share": "Compartir enlace"
   },
   "secret": {
     "titleFile": "Este es su archivo",
@@ -305,5 +307,22 @@
     "step3Title": "Se abre una vez",
     "step3Text": "Después se elimina. Los secretos no abiertos caducan según lo programado.",
     "footer": "Creado para proteger y cifrar sus mensajes de extremo a extremo."
+  },
+  "generator": {
+    "title": "Generador de contraseñas",
+    "hint": "Se crea en su navegador. No se envía nada.",
+    "regenerate": "Generar otra",
+    "length": "Longitud",
+    "shorter": "Más corta",
+    "longer": "Más larga",
+    "characters": "Caracteres",
+    "upper": "Mayúsculas",
+    "lower": "Minúsculas",
+    "digits": "Números",
+    "symbols": "Símbolos",
+    "weak": "Débil",
+    "good": "Buena",
+    "strong": "Fuerte",
+    "veryStrong": "Muy fuerte"
   }
 }

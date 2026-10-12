@@ -28,7 +28,8 @@
     "dropHint": "Or click to browse.",
     "dropRelease": "Release to add the file",
     "fileReady": "ready to encrypt",
-    "buttonRemove": "Remove"
+    "buttonRemove": "Remove",
+    "chooseFile": "Choose a file to encrypt"
   },
   "display": {
     "titleDecrypting": "Decrypting...",
@@ -87,7 +88,8 @@
     "receiptListHint": "You can also find it later on the Receipts page.",
     "badgeStored": "Stored · deletes in {{expiration}}",
     "rowLabelPassword": "Your password",
-    "autoCopied": "Link copied"
+    "autoCopied": "Link copied",
+    "share": "Share link"
   },
   "secret": {
     "titleFile": "Here's your file",
@@ -305,5 +307,22 @@
     "step3Title": "It opens once",
     "step3Text": "Then it's deleted. Unopened secrets expire on schedule.",
     "footer": "Built to secure and encrypt your messages, end to end."
+  },
+  "generator": {
+    "title": "Password generator",
+    "hint": "Made in your browser. Nothing is sent anywhere.",
+    "regenerate": "Generate another",
+    "length": "Length",
+    "shorter": "Shorter",
+    "longer": "Longer",
+    "characters": "Characters",
+    "upper": "Uppercase letters",
+    "lower": "Lowercase letters",
+    "digits": "Numbers",
+    "symbols": "Symbols",
+    "weak": "Weak",
+    "good": "Good",
+    "strong": "Strong",
+    "veryStrong": "Very strong"
   }
 }
